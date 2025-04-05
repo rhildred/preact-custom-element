@@ -69,6 +69,16 @@ FullName.propTypes = {
 register(FullName, 'full-name');
 ```
 
+## Scoped css
+
+There is a 4th argument to register for an options object. If you want scoped css you need to set `shadow` to `true` and `adoptedStyleSheets` to have the style sheet as a `CSSStyleSheet` attached to your shadow dom.
+
+```javascript
+register(Scoped, "x-scoped", [], {shadow:true, adoptedStyleSheets:[sheet]});
+```
+
+For a complete example look at `index.html` and `src/main.jsx` in this repository
+
 
 ## Related
 
