@@ -37,7 +37,10 @@
 			]
 		}
 	},
-	"repository": "preactjs/preact-custom-element",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rhildred/preact-custom-element.git"
+	},
 	"keywords": [
 		"preact",
 		"web",
@@ -50,8 +53,8 @@
 		"The Preact Authors (https://preactjs.com)"
 	],
 	"license": "MIT",
-	"bugs": "https://github.com/preactjs/preact-custom-element/issues",
-	"homepage": "https://github.com/preactjs/preact-custom-element",
+	"bugs": "https://github.com/rhildred/preact-custom-element/issues",
+	"homepage": "https://github.com/rhildred/preact-custom-element",
 	"peerDependencies": {
 		"preact": "10.x"
 	},
@@ -81,5 +84,8 @@
 		"hooks": {
 			"pre-commit": "lint-staged"
 		}
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

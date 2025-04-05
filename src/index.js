@@ -47,7 +47,11 @@ export default function register(Component, tagName, propNames, options) {
 			options && options.shadow
 				? inst.attachShadow({ mode: options.mode || 'open' })
 				: inst;
-		if(options && options.adoptedStyleSheets && inst._root.adoptedStyleSheets){
+		if (
+			options &&
+			options.adoptedStyleSheets &&
+			inst._root.adoptedStyleSheets
+		) {
 			inst._root.adoptedStyleSheets = options.adoptedStyleSheets;
 		}
 		return inst;
